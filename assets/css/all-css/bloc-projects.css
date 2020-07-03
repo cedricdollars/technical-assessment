@@ -1,0 +1,47 @@
+/** @format */
+
+.bloc-text-title-project {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #86377b;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  background-color: #99348d9e !important;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project-card:hover {
+  transform: scale(0.95, 0.98);
+  box-shadow: -1px -1px 69px -17px rgba(0, 0, 0, 0.32);
+}
+
+.project-card-personal {
+  background-color: #b8b8b8c4 !important;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project-card-personal:hover {
+  transform: scale(0.95, 0.98);
+  box-shadow: -1px -1px 69px -17px rgba(0, 0, 0, 0.32);
+}
+
+.project-card-body {
+  color: white !important;
+  text-decoration: none;
+}
+
+.project-card-body:hover {
+  text-decoration: none;
+}
+
+.corporate-name {
+  font-style: italic;
+  font-size: 0.9rem;
+}
