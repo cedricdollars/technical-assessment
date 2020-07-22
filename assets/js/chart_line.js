@@ -1,4 +1,5 @@
 const canvas_line = document.getElementById("myChartLine");
+
 let myChart_line = new Chart(canvas_line, {
   type: "line",
   data: {
@@ -14,11 +15,12 @@ let myChart_line = new Chart(canvas_line, {
         borderColor: ["red"],
       },
       {
-        data: [2, 11],
+        data: [2, 10],
         backgroundColor: ["transparent"],
         borderColor: ["blue"],
       },
     ],
+    labels: ["2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
   },
   options: {
     scales: {

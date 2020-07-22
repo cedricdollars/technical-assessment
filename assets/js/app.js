@@ -7,6 +7,13 @@ class customChart {
       activePoints.length !== 0 ? console.dir(activePoints) : 0;
     };
   }
+  static getEventMouseOver() {
+    const canvas_doghnut = document.getElementById("myChartDoghnut");
+    canvas_doghnut.onmouseover = event => {
+      let activePoints = myChart_doghnut.getElementsAtEvent(event);
+        activePoints.length !== 0 ? console.dir(activePoints) : console.error('doesn\'t works');
+    }
+  }
 
   static getClicksEventLn() {
     const canvas_line = document.getElementById("myChartLine");
@@ -16,6 +23,7 @@ class customChart {
     };
   }
 }
-
+//customChart.getEventMouseOver();
 customChart.getClicksEventDn();
 customChart.getClicksEventLn();
+
