@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -21,14 +21,45 @@
     />
     <!-- Js and jQuery -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="assets/js/chart_dognut.js" defer></script>
+    <script src="assets/js/chart_line.js" defer></script>
     <script src="assets/js/app.js" defer></script>
   </head>
   <body>
-    <div class="offset-sm-2 col-sm-8 mt-3 cardy">
+    <div class="offset-1 col-10 mt-5 cardy">
       <div class="card">
         <div class="card-body">
-          Setup simple project templater
+          <h2>Technical Assessment</h2>
         </div>
+      </div>
+
+      <div class="global-tech">
+        <div class="header-tech row">
+          <div class="col-4 mb-2">
+            <span class="header-text"
+              ><b>Drug Adverse Events </b> by type of Seriousness</span
+            >
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="circle-tech col-4">
+            <div class="col-12 circle-header mb-4">
+              <span>Each Drug Indication as % of all Drug Adverse Events</span>
+              <span
+                >Display of Reports by Drug Indication for Hospitalization</span
+              >
+            </div>
+            <div class="col-12"><canvas id="myChartDoghnut"></canvas></div>
+          </div>
+          <div class="offset-1 diagram-tech col-7">
+            <div class="col-12 circle-header">
+              <span>Display of Reports by Drug Indication for Other </span>
+            </div>
+            <div class="col-12"><canvas id="myChartLine"></canvas></div>
+          </div>
+        </div>
+        <div class="offset-4 col-8 comparison-tech mt-3"></div>
       </div>
     </div>
   </body>
